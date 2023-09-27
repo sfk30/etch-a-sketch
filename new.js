@@ -3,7 +3,7 @@ const grid = document.querySelector('#grid')
 const submitButton = document.getElementById('sub-btn')
 const userSize = document.getElementById('user-size')
 submitButton.addEventListener('click', makeGrid)
-
+submitButton.addEventListener('click', colorMe)
 
 
 function makeGrid() {
@@ -18,6 +18,10 @@ function makeGrid() {
             row.appendChild(column)
         }
     }
+}
+
+
+function colorMe() {
     const columns = document.querySelectorAll('.column')
 
     columns.forEach((column) => {
@@ -26,4 +30,3 @@ function makeGrid() {
     })
 })
 }
-
