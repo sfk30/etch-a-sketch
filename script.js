@@ -10,3 +10,15 @@ for (let i = 0; i < 16; i ++) {
         row.appendChild(column)
     }
 }
+
+const columns = document.querySelectorAll('.column')
+
+columns.forEach((column) => {
+    column.addEventListener('mouseenter', (event) => {
+        event.target.style.backgroundColor = 'purple'
+    })
+})
+// columns.addEventlistener('mouseenter', (event) => {
+//     event.target.style.color = 'purple'
+// }) this does not work because columns is a nodelist
+// addEventListener works only on element not n array
