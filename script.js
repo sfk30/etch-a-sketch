@@ -5,6 +5,9 @@ const popup = document.createElement('p')
 userInputs.appendChild(popup)
 popup.innerHTML = ''
 
+const blackPen = document.getElementById('black')
+const rainbowPen = document.getElementById('rainbow')
+
 let userSize = document.getElementById('user-size');
 let userSubmit = document.getElementById('sub-btn');
 userSubmit.addEventListener('click', makeGrid);
