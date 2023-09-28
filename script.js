@@ -17,6 +17,8 @@ function makeGrid() {
     grid.innerHTML = ''
     if (number <= 0 || number > 99){
         popup.innerHTML = 'Enter a number greater than 0 and less than 99'
+    } else if (isNaN(number)) {
+        popup.innerHTML = 'Enter a valid number!'
     } else {
         popup.innerHTML = ''
         for (let i = 0; i < number; i ++) {
