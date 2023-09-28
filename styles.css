@@ -23,11 +23,16 @@ body {
 }
 
 .column {
+    /* no need to write display flex as inherited from row */
     border: 1px solid pink;
     /* background-color: blue; */
     flex: 1;
 }
 
+.user-info {
+    display: flex;
+    margin: 10px;
+}
 
 
 
