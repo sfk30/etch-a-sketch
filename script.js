@@ -62,6 +62,8 @@ function colorMe() {
 
 function eraseMe() {
     grid.innerHTML = ''
+    document.getElementById("black").checked = false;
+    document.getElementById("rainbow").checked = false;
     defaultGrid()
 }
 
