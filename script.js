@@ -54,7 +54,7 @@ function colorMe() {
             } else if (eraserPen.checked) {
                 event.target.style.backgroundColor = ''
             } else {
-                event.target.style.backgroundColor = 'purple'
+                event.target.style.backgroundColor = 'hotpink'
             }
         })
     })
@@ -64,6 +64,7 @@ function eraseMe() {
     grid.innerHTML = ''
     document.getElementById("black").checked = false;
     document.getElementById("rainbow").checked = false;
+    userSize.value = '';
     defaultGrid()
 }
 

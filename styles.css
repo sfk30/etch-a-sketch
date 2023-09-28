@@ -5,6 +5,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(easyhearts.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* .content { 
@@ -44,14 +47,33 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    font-weight: bold;
 }
 
 button {
     cursor: pointer;
     padding: 3px 12px;
     border-radius: 3px;
-    background: rgb(245, 82, 220);
+    background: rgb(247, 105, 207);
     border: 1px solid rgb(248, 76, 105);
     color: black;
+    font-weight: bold;
   }
   
+button#clear {
+    margin-left: auto;
+} 
+
+button#sub-btn {
+    margin-right: auto;
+    margin-left: 5px;
+} 
+
+footer {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.text { 
+    margin-right: 5px;
+}

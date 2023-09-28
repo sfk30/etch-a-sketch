@@ -7,25 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- <img src="hearts.webp" alt="hearts"> -->
     <div class="header">
         <h1>Etch-a-sketch</h1>
     </div>
 
-    <div id="grid"></div>
+    <div class="content">
 
-    <div id="user-inputs">
-        <p>Grid size:</p><input type="text" id="user-size">
-        <button id="sub-btn">Submit</button>
-        <div id="colors">
-            <input type="radio" id="black" name="pens" value="black">
-            <label for="black">Black</label>
-            <input type="radio" id="rainbow" name="pens" value="rainbow">
-            <label for="rainbow">Rainbow</label>
-            <input type="radio" id="eraser" name="pens" value="eraser">
-            <label for="eraser">Eraser</label>
+        <div id="user-inputs">
+            <label class="user text">Grid size:</label><input type="text" id="user-size" size="2" placeholder="10">
+            <button id="sub-btn" class="user">Submit</button>
+            <div id="colors" class="user">
+                <input type="radio" id="black" name="pens" value="black">
+                <label for="black">Black</label>
+                <input type="radio" id="rainbow" name="pens" value="rainbow">
+                <label for="rainbow">Rainbow</label>
+                <input type="radio" id="eraser" name="pens" value="eraser">
+                <label for="eraser">Eraser</label>
+            </div>
+            <button id="clear" class="user">Clear</button>
         </div>
-        <button id="clear">Clear</button>
+
+        <div id="grid"></div>
+
     </div>
+
+    <footer>Made with 💗</footer>
 
     <script src="script.js"></script>
 </body>
