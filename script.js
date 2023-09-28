@@ -45,7 +45,7 @@ function colorMe() {
             if (blackPen.checked) {
             event.target.style.backgroundColor = 'black'
             } else if (rainbowPen.checked) {
-                event.target.style.backgroundColor = 'yellow'
+                event.target.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16)
             } else {
                 event.target.style.backgroundColor = 'purple'
             }
