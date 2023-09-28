@@ -1,5 +1,6 @@
 const grid = document.querySelector('#grid')
 const userInputs = document.getElementById('user-inputs')
+const alert = document.getElementsByClassName('alert')
 
 const popup = document.createElement('p')
 userInputs.appendChild(popup)
@@ -23,6 +24,7 @@ function makeGrid() {
     grid.innerHTML = ''
     if (number <= 0 || number > 99){
         popup.innerHTML = 'Enter a number greater than 0 and less than 99'
+        defaultGrid()
     } else if (isNaN(number)) {
         popup.innerHTML = 'Enter a valid number!'
     } else {
@@ -60,4 +62,20 @@ function colorMe() {
 
 function eraseMe() {
     grid.innerHTML = ''
+    defaultGrid()
 }
+
+function defaultGrid() { 
+        for (let i = 0; i < 10; i ++) {
+        let row = document.createElement('div')
+        row.classList.add('row')
+        grid.appendChild(row)
+        for (let j = 0; j < 10; j ++) {
+            let column = document.createElement('div')
+            column.classList.add('column')
+            row.appendChild(column)
+        }
+    }
+}
+
+defaultGrid();
