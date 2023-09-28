@@ -7,6 +7,11 @@ body {
     align-items: center;
 }
 
+/* .content { 
+    display: flex;
+    justify-content: space-around;
+} */
+
 #grid {
     height: 500px;
     width: 500px;
@@ -29,10 +34,24 @@ body {
     flex: 1;
 }
 
-.user-info {
-    display: flex;
-    margin: 10px;
+.user { 
+    display: inline-block;
 }
 
+#user-inputs {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
 
-
+button {
+    cursor: pointer;
+    padding: 3px 12px;
+    border-radius: 3px;
+    background: rgb(245, 82, 220);
+    border: 1px solid rgb(248, 76, 105);
+    color: black;
+  }
+  
