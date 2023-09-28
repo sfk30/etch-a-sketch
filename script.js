@@ -40,10 +40,21 @@ function makeGrid() {
 
 function colorMe() {
     const columns = document.querySelectorAll('.column')
-
+    if (blackPen.checked) {
     columns.forEach((column) => {
         column.addEventListener('mouseenter', (event) => {
-            event.target.style.backgroundColor = 'purple'
+            event.target.style.backgroundColor = 'black'
         })
-    })
+    })} else if (rainbowPen.checked) {
+        columns.forEach((column) => {
+            column.addEventListener('mouseenter', (event) => {
+                event.target.style.backgroundColor = 'yellow'
+            })
+        })} else {
+            columns.forEach((column) => {
+                column.addEventListener('mouseenter', (event) =>
+                event.target.style.backgroundColor = 'purple')
+            })
+
+        }
 }
