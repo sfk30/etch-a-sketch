@@ -15,9 +15,10 @@ userSubmit.addEventListener('click', colorMe);
 function makeGrid() {
     let number = userSize.value;
     grid.innerHTML = ''
-    if (number < 0 || number > 99){
+    if (number <= 0 || number > 99){
         popup.innerHTML = 'Enter a number greater than 0 and less than 99'
     } else {
+        popup.innerHTML = ''
         for (let i = 0; i < number; i ++) {
             let row = document.createElement('div')
             row.classList.add('row')
