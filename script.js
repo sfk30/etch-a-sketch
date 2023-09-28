@@ -7,6 +7,7 @@ popup.innerHTML = ''
 
 const blackPen = document.getElementById('black')
 const rainbowPen = document.getElementById('rainbow')
+const eraserPen = document.getElementById('eraser')
 
 let userSize = document.getElementById('user-size');
 let userSubmit = document.getElementById('sub-btn');
@@ -46,6 +47,8 @@ function colorMe() {
             event.target.style.backgroundColor = 'black'
             } else if (rainbowPen.checked) {
                 event.target.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16)
+            } else if (eraserPen.checked) {
+                event.target.style.backgroundColor = ''
             } else {
                 event.target.style.backgroundColor = 'purple'
             }
