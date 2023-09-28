@@ -76,6 +76,7 @@ function defaultGrid() {
             row.appendChild(column)
         }
     }
+    colorMe()
 }
 
 defaultGrid();
