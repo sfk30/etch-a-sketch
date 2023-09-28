@@ -8,6 +8,8 @@ popup.innerHTML = ''
 const blackPen = document.getElementById('black')
 const rainbowPen = document.getElementById('rainbow')
 const eraserPen = document.getElementById('eraser')
+const userClear = document.getElementById('clear')
+userClear.addEventListener('click', eraseMe);
 
 let userSize = document.getElementById('user-size');
 let userSubmit = document.getElementById('sub-btn');
@@ -54,4 +56,8 @@ function colorMe() {
             }
         })
     })
+}
+
+function eraseMe() {
+    grid.innerHTML = ''
 }
